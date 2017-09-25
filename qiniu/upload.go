@@ -8,8 +8,8 @@ import (
 )
 
 func main(){
-	accessKey := "OfWDisyHuTZ3DRf1tjIN57WIFKTBG58_06i4FmMN"
-	secretKey := "6iOZfhDsKOtZ3Of-pTKrHr2_eSJTOON9OJAJgfdf"
+	accessKey := "myaccesskey"
+	secretKey := "mysecretkey"
 	mac := qbox.NewMac(accessKey, secretKey)
 	bucket:="lvxiaorun"
 	putPolicy := storage.PutPolicy{
