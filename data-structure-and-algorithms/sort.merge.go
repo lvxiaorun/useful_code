@@ -33,10 +33,12 @@ func mergeSort(items []int) []int {
 		}
 	}
 
-	return merge(mergeSort(left), mergeSort(right))
+	return merge(mergeSort(left), mergeSort(right)) //递归
 }
 
 func merge(left, right []int) (result []int) {
+	fmt.Println(left)
+	fmt.Println(right) //算法此函数得到的参数(数组)至少保证自己有序
 	result = make([]int, len(left)+len(right))
 
 	i := 0
@@ -59,6 +61,5 @@ func merge(left, right []int) (result []int) {
 		result[i] = right[j]
 		i++
 	}
-
 	return
 }
